@@ -66,7 +66,7 @@
 
     /* Email Button Style */
     .email-button {
-      position: absolute;
+      position: fixed;
       top: 20px;
       left: 20px;
       background-color: #333;
@@ -77,15 +77,25 @@
       font-size: 16px;
       font-weight: bold;
       transition: background-color 0.3s ease;
+      max-width: 90%; /* Prevents the button from exceeding the viewport width */
+      box-sizing: border-box; /* Includes padding and borders in the width calculation */
     }
 
     .email-button:hover {
       background-color: #555;
     }
 
+    /* Responsive Design for Mobile Devices */
     @media (max-width: 768px) {
-      .container {
-        padding: 10px;
+      .email-button {
+        font-size: 14px;
+        padding: 8px 15px;
+        top: 10px;
+        left: 10px;
+      }
+
+      .top-header {
+        font-size: 28px;
       }
 
       .scripture-box h2 {
@@ -94,10 +104,6 @@
 
       .scripture-box p {
         font-size: 16px;
-      }
-
-      .top-header {
-        font-size: 28px;
       }
     }
   </style>
