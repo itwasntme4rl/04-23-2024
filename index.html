@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fading Text</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .fade-text {
+      font-size: 36px;
+      font-weight: bold;
+      animation: fadeOut 5s ease-out forwards;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-text">THERE IS ONLY ONE FOUNDATION</div>
+
+  <script>
+    // Redirect to the local file after 5 seconds
+    setTimeout(() => {
+      window.location.href = "GuidedByTheHolySpirit.html";
+    }, 5000);
+  </script>
+</body>
+</html>
