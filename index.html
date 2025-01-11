@@ -44,31 +44,25 @@
       border-radius: 12px;
     }
 
-    /* Centered Header Style */
-    .top-header {
+    /* Header Section with Button */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       background-color: black;
       color: #894900;
-      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
       font-size: 36px;
       font-weight: bold;
-      padding: 20px 0;
-      width: 100%;
+      margin: 0;
+      flex-grow: 1;
     }
 
-    /* Footer Style */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-      width: 100%;
-    }
-
-    /* Email Button Style */
+    /* Email Button */
     .email-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
       background-color: #333;
       color: white;
       padding: 10px 20px;
@@ -77,46 +71,41 @@
       font-size: 16px;
       font-weight: bold;
       transition: background-color 0.3s ease;
-      max-width: 90%; /* Prevents the button from exceeding the viewport width */
-      box-sizing: border-box; /* Includes padding and borders in the width calculation */
+      white-space: nowrap;
     }
 
     .email-button:hover {
       background-color: #555;
     }
 
-    /* Responsive Design for Mobile Devices */
+    /* Responsive Design */
     @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
       .email-button {
         font-size: 14px;
         padding: 8px 15px;
-        top: 10px;
-        left: 10px;
-      }
-
-      .top-header {
-        font-size: 28px;
-      }
-
-      .scripture-box h2 {
-        font-size: 20px;
-      }
-
-      .scripture-box p {
-        font-size: 16px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Email Me Button -->
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gerardo.garcia.gg2189@gmail.com" target="_blank" class="email-button">Email Me</a>
-
-  <!-- Top Header Section -->
-  <div class="top-header">
-    Bible Scriptures
+  <!-- Header Section with Email Button -->
+  <div class="header">
+    <h1>Bible Scriptures</h1>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gerardo.garcia.gg2189@gmail.com" target="_blank" class="email-button">Email Me</a>
   </div>
 
+  <!-- Scripture Content -->
   <div class="container">
     <div class="scripture-box">
       <h2>"Feeling Downcast?"</h2>
