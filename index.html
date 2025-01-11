@@ -16,16 +16,17 @@
       height: 100vh;
       font-family: Arial, sans-serif;
       overflow: hidden;
+      text-align: center;
     }
 
     .fade-text {
       font-size: 36px;
       font-weight: bold;
-      text-align: center;
-      padding: 0 20px; /* Add padding for space on smaller screens */
-      line-height: 1.5; /* Adjust spacing between lines */
+      line-height: 1.5;
       animation: fadeOut 5s ease-out forwards;
-      max-width: 90%; /* Ensure the text does not exceed the screen width */
+      padding: 0 10%; /* Add padding to prevent touching the screen edges */
+      box-sizing: border-box; /* Ensure padding is included in layout calculations */
+      max-width: 90%;
     }
 
     @keyframes fadeOut {
