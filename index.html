@@ -10,12 +10,16 @@
       margin: 0;
       padding: 0;
       background-color: #894900;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
+      flex-grow: 1;
     }
 
     .scripture-box {
@@ -83,6 +87,16 @@
       background-color: #555;
     }
 
+    /* Footer Style */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      width: 100%;
+      margin-top: auto;
+    }
+
     /* Responsive Design for Mobile */
     @media (max-width: 768px) {
       .header {
@@ -101,6 +115,11 @@
         transform: none;
         margin-top: 10px;
         padding: 8px 15px;
+        font-size: 14px;
+      }
+
+      footer {
+        padding: 15px;
         font-size: 14px;
       }
     }
